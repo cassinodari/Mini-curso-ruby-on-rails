@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @register_product.nome %>
+</p>
+
+<p>
+  <strong>Id seq:</strong>
+  <%= @register_product.id_seq %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @register_product.endereco %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @register_product.preco %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @register_product.email %>
+</p>
+
+<%= link_to 'Edit', edit_register_product_path(@register_product) %> |
+<%= link_to 'Back', register_products_path %>

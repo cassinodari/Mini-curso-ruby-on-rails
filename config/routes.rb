@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  resources :register_products
   root 'pages#home'
+
   get 'pages/home', as: 'home'
   get 'pages/catalog', as: 'catalog'
   get 'pages/products', as: 'products'
